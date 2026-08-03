@@ -32,9 +32,13 @@
       "camera": {
         "type": "perspective",
         "xr": {
-          "desktop": "3D",
-          "xrCameraType": "3dOnly",
-          "headset": "disabled"
+          "desktop": "disabled",
+          "xrCameraType": "world",
+          "headset": "disabled",
+          "phone": "AR",
+          "world": {
+            "disableWorldTracking": true
+          }
         }
       },
       "components": {},
@@ -94,14 +98,47 @@
       "id": "b1af4d4e-9687-4f4b-99fd-276218c354bc",
       "position": [
         -0.01137144585936889,
-        0,
-        -5.6015187839789675
+        0.10742421665056767,
+        -2.385296774555627e-17
       ],
       "rotation": [
+        0.7071067811865475,
         0,
         0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.10000000000000005,
+        0.10000000000000005,
+        0.10000000000000005
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "aa8e932c-82b5-4596-a3ce-bcfb5bb849c8",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/miku8thw.glb"
+        },
+        "animationClip": "Armature|mixamo.com|Layer0",
+        "loop": true
+      },
+      "name": "miku8thw.glb",
+      "order": 5.032009486566925
+    },
+    "aa8e932c-82b5-4596-a3ce-bcfb5bb849c8": {
+      "id": "aa8e932c-82b5-4596-a3ce-bcfb5bb849c8",
+      "position": [
         0,
-        1
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
       ],
       "scale": [
         1,
@@ -112,16 +149,11 @@
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/miku8thw.glb"
-        },
-        "animationClip": "",
-        "loop": true
+      "name": "Objetivo de la imagen",
+      "imageTarget": {
+        "name": "tarjetaprofe"
       },
-      "name": "miku8thw.glb",
-      "order": 3.014933992566786
+      "order": 4.764965971228577
     }
   },
   "spaces": {
