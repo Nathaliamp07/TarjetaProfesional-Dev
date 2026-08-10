@@ -108,8 +108,8 @@
         0.7071067811865476
       ],
       "scale": [
-        0.10000000000000005,
-        0.10000000000000005,
+        0.13180667331050047,
+        0.13799410502030549,
         0.10000000000000005
       ],
       "geometry": null,
@@ -151,9 +151,163 @@
       "components": {},
       "name": "Objetivo de la imagen",
       "imageTarget": {
-        "name": "tarjetaprofe"
+        "name": "tarjeta_natha"
       },
       "order": 4.764965971228577
+    },
+    "cf3cc03f-74d7-4156-b2a0-5701be6cd3a1": {
+      "id": "cf3cc03f-74d7-4156-b2a0-5701be6cd3a1",
+      "position": [
+        0,
+        0.30000000000000004,
+        -1.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.0893231016575178,
+        1.0000000000000002,
+        1.3362757353564412
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/waves.mp4"
+        }
+      },
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Plano",
+      "order": 5.1415203253258275,
+      "videoControls": {
+        "paused": true
+      }
+    },
+    "84106c4e-85e6-44f5-af25-a5fccc3828dc": {
+      "id": "84106c4e-85e6-44f5-af25-a5fccc3828dc",
+      "position": [
+        0.19999999999999982,
+        0.5000000000000001,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "e82d4355-f511-4c80-b670-25fcfcdd04ca": {
+          "id": "e82d4355-f511-4c80-b670-25fcfcdd04ca",
+          "name": "video-toggle-button",
+          "parameters": {
+            "plano": {
+              "type": "entity",
+              "id": "cf3cc03f-74d7-4156-b2a0-5701be6cd3a1"
+            }
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 36,
+        "background": "#ad50ff",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Botón",
+      "order": 7.362324080691948
+    },
+    "5de357c3-fe44-4663-be62-bcee3f1c7648": {
+      "id": "5de357c3-fe44-4663-be62-bcee3f1c7648",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "84106c4e-85e6-44f5-af25-a5fccc3828dc",
+      "components": {},
+      "name": "Icono",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.07860170232127311
+    },
+    "bc7ff1b0-9f42-4829-b910-f594ecccc394": {
+      "id": "bc7ff1b0-9f42-4829-b910-f594ecccc394",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "84106c4e-85e6-44f5-af25-a5fccc3828dc",
+      "components": {},
+      "name": "Texto",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Button",
+        "color": "#ffffff",
+        "fontSize": 16
+      },
+      "order": 1.159360482994468
     }
   },
   "spaces": {

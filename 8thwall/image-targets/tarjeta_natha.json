@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 53,
+    "left": 0,
+    "width": 1120,
+    "height": 1493,
+    "isRotated": true,
+    "originalWidth": 1120,
+    "originalHeight": 1600
+  },
+  "imagePath": "image-targets/tarjeta_natha_luminance.jpg",
+  "metadata": null,
+  "name": "tarjeta_natha",
+  "resources": {
+    "originalImage": "tarjeta_natha_original.jpg",
+    "croppedImage": "tarjeta_natha_cropped.jpg",
+    "thumbnailImage": "tarjeta_natha_thumbnail.jpg",
+    "luminanceImage": "tarjeta_natha_luminance.jpg"
+  },
+  "created": 1785943813772,
+  "updated": 1785943813772
+}
