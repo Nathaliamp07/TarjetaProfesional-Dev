@@ -11,8 +11,7 @@ ecs.registerComponent({
   stateMachine: ({world, eid, schemaAttribute}) => {
     const { plano } = schemaAttribute.get(eid)
 
-
-
+    
     ecs.defineState('initial-state')
       .initial()
       .listen(eid, ecs.input.UI_CLICK, () => {
