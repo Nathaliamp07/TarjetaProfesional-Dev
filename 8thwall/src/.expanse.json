@@ -97,7 +97,7 @@
     "b1af4d4e-9687-4f4b-99fd-276218c354bc": {
       "id": "b1af4d4e-9687-4f4b-99fd-276218c354bc",
       "position": [
-        -0.01137144585936889,
+        0.2529420215418866,
         0.10742421665056767,
         -2.385296774555627e-17
       ],
@@ -130,7 +130,7 @@
     "aa8e932c-82b5-4596-a3ce-bcfb5bb849c8": {
       "id": "aa8e932c-82b5-4596-a3ce-bcfb5bb849c8",
       "position": [
-        0,
+        -0.03668600855750692,
         0,
         0
       ],
@@ -158,20 +158,20 @@
     "cf3cc03f-74d7-4156-b2a0-5701be6cd3a1": {
       "id": "cf3cc03f-74d7-4156-b2a0-5701be6cd3a1",
       "position": [
-        0.0071897577551951475,
-        0.5476499231283848,
-        0.6118666292609035
+        -0.18574825685936805,
+        0.3289396508678416,
+        0.6537386585863397
       ],
       "rotation": [
-        0.7071067811865475,
-        0,
-        0,
-        0.7071067811865476
+        0.7095091711502017,
+        0.1412221250257641,
+        -0.027728550545201604,
+        0.6898435873019503
       ],
       "scale": [
-        1.9330014822754178,
-        1.5124185546514468,
-        1.3362757353564412
+        0.6686012257784675,
+        0.5218358729368675,
+        0.9087186527797432
       ],
       "geometry": {
         "type": "plane",
@@ -197,20 +197,20 @@
     "84106c4e-85e6-44f5-af25-a5fccc3828dc": {
       "id": "84106c4e-85e6-44f5-af25-a5fccc3828dc",
       "position": [
-        0.538079983595773,
-        0.4448298543119546,
-        0.17669426013873193
+        -0.18091583862312655,
+        0.29569052995416845,
+        0.6488308971297438
       ],
       "rotation": [
-        0.7071067811865475,
-        0,
-        0,
-        0.7071067811865476
+        0.6963151920697759,
+        0.12306564627398213,
+        -0.024395702289669488,
+        0.7066858210759517
       ],
       "scale": [
-        0.7548731508218888,
-        0.793952163754389,
-        0.9999999999999997
+        0.9999999999999993,
+        1.0000000000000024,
+        1.0000000000000027
       ],
       "geometry": null,
       "material": null,
@@ -229,17 +229,18 @@
       },
       "ui": {
         "type": "3d",
-        "width": 100,
-        "height": 36,
+        "width": 66,
+        "height": 49,
         "background": "#40878c",
         "borderRadius": 18,
         "flexDirection": "row",
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0,
         "padding": "10",
         "gap": "6",
         "alignItems": "center",
         "justifyContent": "center",
-        "flexWrap": "nowrap"
+        "flexWrap": "nowrap",
+        "opacity": 1
       },
       "name": "Botón",
       "order": 7.631867543038883
@@ -268,18 +269,21 @@
       "components": {},
       "name": "Icono",
       "ui": {
-        "width": 16,
-        "height": 16,
+        "width": 58,
+        "height": 51,
         "image": {
-          "type": "url",
-          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+          "type": "asset",
+          "asset": "assets/pausa.png"
         },
-        "backgroundOpacity": 1
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "background": "#ffffff",
+        "opacity": 1
       },
       "order": 0.07860170232127311
     },
-    "bc7ff1b0-9f42-4829-b910-f594ecccc394": {
-      "id": "bc7ff1b0-9f42-4829-b910-f594ecccc394",
+    "422a3537-1a36-4766-933f-acb5d7dfb8c4": {
+      "id": "422a3537-1a36-4766-933f-acb5d7dfb8c4",
       "position": [
         0,
         0,
@@ -292,23 +296,355 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        3.417694656636498,
+        3.417694656636498,
+        3.417694656636498
       ],
       "geometry": null,
       "material": null,
-      "parentId": "84106c4e-85e6-44f5-af25-a5fccc3828dc",
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "name": "Texto",
-      "ui": {
-        "width": 50,
-        "height": 14,
-        "text": "Button",
-        "color": "#ffffff",
-        "fontSize": 16
+      "name": "insta.png",
+      "order": 5.8454354515422855
+    },
+    "00ec5560-e6a1-44c0-98ff-c308e76eb8d7": {
+      "id": "00ec5560-e6a1-44c0-98ff-c308e76eb8d7",
+      "position": [
+        -0.07195034020219918,
+        0,
+        1.3940114565223485
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        0.9999999999999998
+      ],
+      "scale": [
+        0.39380446843331246,
+        0.39380446843331246,
+        0.39380446843331246
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/tamagotchi.glb"
+        },
+        "animationClip": "",
+        "loop": true
       },
-      "order": 1.159360482994468
+      "name": "tamagotchi.glb",
+      "order": 7.099133542875062
+    },
+    "6009b349-e4d0-4f1e-8abd-4dd9619284d6": {
+      "id": "6009b349-e4d0-4f1e-8abd-4dd9619284d6",
+      "position": [
+        -0.36098590874773717,
+        0.14600465740213775,
+        -0.5066919538254614
+      ],
+      "rotation": [
+        0.009498842359358476,
+        0.07967872234113933,
+        -0.11799435219542873,
+        0.9897668442870255
+      ],
+      "scale": [
+        4.20571436514176,
+        4.205714365141756,
+        4.205714365141755
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Tubbygotchi.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Tubbygotchi.glb",
+      "order": 8.97905732994382
+    },
+    "745e0eef-0ef6-4c2a-8110-8491aef92331": {
+      "id": "745e0eef-0ef6-4c2a-8110-8491aef92331",
+      "position": [
+        0.6000000000000002,
+        0.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 100,
+        "image": {
+          "type": "asset",
+          "asset": "assets/wpp.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "wpp",
+      "order": 10.756114164042598
+    },
+    "29801f77-30eb-4c04-9644-0febb175e8e1": {
+      "id": "29801f77-30eb-4c04-9644-0febb175e8e1",
+      "position": [
+        0.6,
+        0.4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 100,
+        "image": {
+          "type": "asset",
+          "asset": "assets/twt.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "twt",
+      "order": 12.181703315858678
+    },
+    "0af41ec9-dc68-4e8d-ac6a-5ea3cf8c36b4": {
+      "id": "0af41ec9-dc68-4e8d-ac6a-5ea3cf8c36b4",
+      "position": [
+        0.6,
+        0.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 100,
+        "image": {
+          "type": "asset",
+          "asset": "assets/insta.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "insta",
+      "order": 13.343849980219577
+    },
+    "3c8294fd-2447-4648-8aeb-3e439538836b": {
+      "id": "3c8294fd-2447-4648-8aeb-3e439538836b",
+      "position": [
+        1.4080822164676123,
+        0.3712224049227551,
+        -0.298425802837465
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.20316225433432186,
+        0.20316225433432186,
+        0.20316225433432186
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/NUBE.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "NUBE.glb",
+      "order": 16.34004547044935
+    },
+    "06147c0b-5155-41f8-969c-7554b916981e": {
+      "id": "06147c0b-5155-41f8-969c-7554b916981e",
+      "position": [
+        0.21777847820042684,
+        0.2550687908266781,
+        -0.26154752796504477
+      ],
+      "rotation": [
+        0,
+        0,
+        0.13712159571431876,
+        0.9905542226394065
+      ],
+      "scale": [
+        0.18857867229279368,
+        0.18857867229279365,
+        0.18857867229279368
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/CORA.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "CORA.glb (1)",
+      "order": 17.828879973041158
+    },
+    "50cd23ed-7aa6-4b93-91b7-4a4947054d75": {
+      "id": "50cd23ed-7aa6-4b93-91b7-4a4947054d75",
+      "position": [
+        0.5354029797912123,
+        0.23306347843248654,
+        -0.48879631030884474
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.17499449154240052,
+        0.9845694124488212
+      ],
+      "scale": [
+        0.15845511330727952,
+        0.15845511330727952,
+        0.15845511330727946
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/NUBE.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "NUBE.glb (1)",
+      "order": 16.76021564807438,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864"
+    },
+    "126a77b3-b030-4f20-9e35-c34c793878e3": {
+      "id": "126a77b3-b030-4f20-9e35-c34c793878e3",
+      "position": [
+        -1.5873038736207639,
+        1.2666933635435025,
+        -0.26154752796504477
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.3109090079575671,
+        0.95043968181618
+      ],
+      "scale": [
+        0.13154671239059562,
+        0.1315467123905956,
+        0.1315467123905955
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/CORA.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "CORA.glb (2)",
+      "order": 19.025111590193358,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864"
+    },
+    "3698dfb5-266d-4d88-b084-06e7f86a5302": {
+      "id": "3698dfb5-266d-4d88-b084-06e7f86a5302",
+      "position": [
+        -0.8745057148791977,
+        1.0347679516118231,
+        -0.26154752796504477
+      ],
+      "rotation": [
+        0,
+        0,
+        0.23084740683763022,
+        0.9729899664212069
+      ],
+      "scale": [
+        0.08945212241130986,
+        0.08945212241130986,
+        0.08945212241130983
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/CORA.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "CORA.glb (3)",
+      "order": 20.173391239029502,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864"
     }
   },
   "spaces": {

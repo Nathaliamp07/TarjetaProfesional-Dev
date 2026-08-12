@@ -1,27 +1,35 @@
-// This is a component file. You can use this file to define a custom component for your project.
-// This component will appear as a custom component in the editor.
-
 import * as ecs from '@8thwall/ecs'
 
 ecs.registerComponent({
-  name: 'video-toggle-button',
+  name: 'video',
+
   schema: {
     plano: ecs.eid,
+    icon: ecs.eid,
   },
-  stateMachine: ({world, eid, schemaAttribute}) => {
-    const { plano } = schemaAttribute.get(eid)
 
-    
-    ecs.defineState('initial-state')
+  stateMachine: ({world, eid, schemaAttribute}) => {
+
+    const { plano, icon} = schemaAttribute.get(eid)
+
+    ecs.defineState('default')
       .initial()
       .listen(eid, ecs.input.UI_CLICK, () => {
-        const videoEid = schemaAttribute.cursor(eid).plano  
 
-        ecs.VideoControls.mutate(world, videoEid, (cursor) => {
-          cursor.paused = !cursor.paused
+        ecs.VideoControls.mutate(world, plano, (controls) => {
+          controls.paused = !controls.paused
+
+          if (controls.paused) {
+
+            ecs.Hidden.remove(world, icon)
+
+          } else {
+
+            ecs.Hidden.set(world, icon)
+          }
+
           return false
         })
       })
   },
 })
-
