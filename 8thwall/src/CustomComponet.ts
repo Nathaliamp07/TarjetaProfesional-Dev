@@ -1,22 +1,23 @@
 import * as ecs from '@8thwall/ecs'
 
 ecs.registerComponent({
-  name: 'video',
+  name: 'video-toggle-button',
 
   schema: {
-    plano: ecs.eid,
+    button: ecs.eid,
+    video: ecs.eid,
     icon: ecs.eid,
   },
 
   stateMachine: ({world, eid, schemaAttribute}) => {
 
-    const { plano, icon} = schemaAttribute.get(eid)
+    const {button, video, icon} = schemaAttribute.get(eid)
 
     ecs.defineState('default')
       .initial()
-      .listen(eid, ecs.input.UI_CLICK, () => {
+      .listen(button, ecs.input.UI_CLICK, () => {
 
-        ecs.VideoControls.mutate(world, plano, (controls) => {
+        ecs.VideoControls.mutate(world, video, (controls) => {
           controls.paused = !controls.paused
 
           if (controls.paused) {
